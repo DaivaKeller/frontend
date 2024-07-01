@@ -1,0 +1,36 @@
+/* Contact.css */
+.contact-container {
+    padding: 20px;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  
+  .form-group textarea {
+    height: 100px;
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    background: blue;
+    color: white;
+    border: none;
+  }
+  
