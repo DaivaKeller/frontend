@@ -1,9 +1,19 @@
-import { useState } from "react";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <></>;
-}
-
-export default App;
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Home from './home';
+import Smartwatches from './smartwatches';
+import Smartphones from './smartphones';
+import './styles.css';
+const App = () => {
+  return (
+    <div className="split-container">
+      <div className="left-pane">
+        <Home />
+      </div>
+      <div className="right-pane">
+        <Smartwatches />
+      </div>
+    </div>
+  );
+};
+export default App
