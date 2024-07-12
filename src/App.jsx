@@ -1,4 +1,4 @@
-import React from 'react';
+/* //import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './home';
 import Smartwatches from './smartwatches';
@@ -34,4 +34,4 @@ function App() {
 
 
 
-export default App
+export default App */

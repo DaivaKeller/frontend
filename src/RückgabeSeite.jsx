@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './App.css';
 
-const ReturnPage = () => {
+const RückgabeSeite = () => {
     const [orderId, setOrderId] = useState('');
     const [reason, setReason] = useState('');
     const [email, setEmail] = useState('');
@@ -61,4 +60,4 @@ const ReturnPage = () => {
     );
 }
 
-export default ReturnPage;
+export default RückgabeSeite;

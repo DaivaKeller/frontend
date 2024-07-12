@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './MapComponent.css';
+//import 'C:\Users\Techstarter\Desktop\Gruppen Arbeit 24.06\gruppenarbeit\frontend\src\NavigationsKarte.css';
 
 const MapComponent = () => {
   useEffect(() => {
