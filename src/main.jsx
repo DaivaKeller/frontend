@@ -7,6 +7,11 @@ import Smartwatches from './smartwatches.jsx';
 import Smartphones from './smartphones.jsx';
 import Kontakten from './kontakten.jsx';
 import Kontaktseite2 from './kontaktseite2.jsx';
+import Garantieseite from '../garantieseite.jsx';
+import TermsOfUse from './TermsOfUse.jsx';
+import NavigationsKarte from './NavigationsKarte.jsx';
+
+
 
 const App = () => (
   <Router>
@@ -16,6 +21,8 @@ const App = () => (
       <Route path="/smartwatches" element={<Smartwatches />} />
       <Route path="/Kontakten" element={<Kontakten />} />
       <Route path="/Kontaktseite2" element={<Kontaktseite2 />} />
+      <Route path="/Garantieseite" element={<Garantieseite />} />
+      <Route path="/TermsOfUse" element={<TermsOfUse />} />
     </Routes> 
   </Router>
  );
