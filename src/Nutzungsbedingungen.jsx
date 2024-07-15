@@ -6,14 +6,14 @@ const Header = () => {
     <nav>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/terms-of-use">Nutzungsbedingungen</Link></li>
+        <li><Link to="/Nutzungsbedingungen">Nutzungsbedingungen</Link></li>
       </ul>
     </nav>
   );
 };
 
 
-const TermsOfUse = () => {
+const Nutzungsbedingungen = () => {
   return (
     <div>
       <h1>Nutzungsbedingungen</h1>
@@ -29,5 +29,5 @@ const TermsOfUse = () => {
   );
 };
 
-export default TermsOfUse;
+export default Nutzungsbedingungen;
 

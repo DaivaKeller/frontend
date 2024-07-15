@@ -1,13 +1,18 @@
-import React from 'react';
-import { useState } from "react";
+import React, { useState } from 'react';
 
 function UnsereFiliale() {
   const [formData, setFormData] = useState({
     name: 'Max Musterman',
     email: 'techshop@online.de',
-    Filiale: 'München, Berlin, Heidelberg, Hamburg',
+    filiale: 'München, Sonnenstr.3',
     message: ''
   });
+
+  const filialen = [
+    'München, Sonnenstr.3',
+    'Berlin, Mondstrasse 2',
+    'Heidelberg, Windstrasse 1'
+  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -35,6 +40,7 @@ function UnsereFiliale() {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              required
             />
           </label>
         </div>
@@ -46,19 +52,36 @@ function UnsereFiliale() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-            
+              required
             />
-           </label>
+          </label>
         </div>
         <div>
           <label>
             Filiale:
-            <input
-              type= "Filiale"
-              name="Filiale"
+            <select
+              name="filiale"
+              value={formData.filiale}
+              onChange={handleChange}
+              required
+            >
+              {filialen.map((filiale, index) => (
+                <option key={index} value={filiale}>
+                  {filiale}
+                </option>
+              ))}
+            </select>
+          </label>
+        </div>
+        <div>
+          <label>
+            Nachricht:
+            <textarea
+              name="message"
               value={formData.message}
-              onChange={handleChange} 
-            />
+              onChange={handleChange}
+              required
+            ></textarea>
           </label>
         </div>
         <button type="submit">Senden</button>
@@ -68,3 +91,4 @@ function UnsereFiliale() {
 }
 
 export default UnsereFiliale;
+

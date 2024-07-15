@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const RückgabeSeite = () => {
+const Rückgabe = () => {
     const [orderId, setOrderId] = useState('');
     const [reason, setReason] = useState('');
     const [email, setEmail] = useState('');
@@ -16,14 +16,16 @@ const RückgabeSeite = () => {
     return (
         <div className="container">
             <h1>Rückgabe</h1>
-            <p>Wir hoffen, dass Sie mit Ihrem Kauf zufrieden sind. Wenn Sie jedoch einen Artikel zurückgeben möchten, helfen wir Ihnen gerne dabei. Bitte lesen Sie unsere Rückgaberichtlinien und füllen Sie das untenstehende Formular aus.</p>
+            <p>Wir hoffen, dass Sie mit Ihrem Kauf zufrieden sind. Wenn Sie jedoch einen Artikel zurückgeben möchten, helfen wir Ihnen gerne dabei.</p>
             <h2>Rückgaberichtlinien</h2>
             <ul>
                 <li>Rückgaben sind innerhalb von 30 Tagen nach dem Kaufdatum möglich.</li>
                 <li>Artikel müssen in ihrem ursprünglichen Zustand und in der Originalverpackung zurückgegeben werden.</li>
                 <li>Bestimmte Artikel sind vom Umtausch ausgeschlossen, z. B. personalisierte Produkte und Unterwäsche.</li>
             </ul>
+            
             <h2>Rückgabeformular</h2>
+            <p>Bitte füllen Sie das untenstehende Formular aus, um eine Rückgabe anzufordern.</p>
             <form id="returnForm" onSubmit={handleSubmit}>
                 <label htmlFor="orderId">Bestellnummer</label>
                 <input 
@@ -60,4 +62,4 @@ const RückgabeSeite = () => {
     );
 }
 
-export default RückgabeSeite;
+export default Rückgabe;
