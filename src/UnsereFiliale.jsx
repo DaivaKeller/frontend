@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../UnsereFiliale.css';
 
 function UnsereFiliale() {
   const [formData, setFormData] = useState({
@@ -11,7 +12,8 @@ function UnsereFiliale() {
   const filialen = [
     'München, Sonnenstr.3',
     'Berlin, Mondstrasse 2',
-    'Heidelberg, Windstrasse 1'
+    'Heidelberg, Windstrasse 1',
+    'Bremen, Seestrasse 11'
   ];
 
   const handleChange = (e) => {
@@ -29,10 +31,10 @@ function UnsereFiliale() {
   };
 
   return (
-    <main>
+    <main className="form-container">
       <h2>Kontakt</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="form-group">
           <label>
             Name:
             <input
@@ -44,7 +46,7 @@ function UnsereFiliale() {
             />
           </label>
         </div>
-        <div>
+        <div className="form-group">
           <label>
             E-Mail:
             <input
@@ -56,7 +58,7 @@ function UnsereFiliale() {
             />
           </label>
         </div>
-        <div>
+        <div className="form-group">
           <label>
             Filiale:
             <select
@@ -73,7 +75,7 @@ function UnsereFiliale() {
             </select>
           </label>
         </div>
-        <div>
+        <div className="form-group">
           <label>
             Nachricht:
             <textarea
@@ -91,4 +93,5 @@ function UnsereFiliale() {
 }
 
 export default UnsereFiliale;
+
 

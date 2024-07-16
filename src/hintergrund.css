@@ -1,0 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+    background-attachment: fixed;
+}
+
+.content {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
